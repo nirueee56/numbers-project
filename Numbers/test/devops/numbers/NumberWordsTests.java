@@ -13,8 +13,24 @@ public class NumberWordsTests {
 	}
 
 	@Test
-	public void numberOutOfRangeReturnsError() {
-		Assert.assertEquals( "0", 0, 0  ) ;
+	public void numberTen() {
+		Assert.assertEquals( "PASS", "TEN", numberWords.toWords( 10 )  ) ;
 	}
+
+	@Test
+	public void numberOneTwoThree() {
+		Assert.assertEquals( "PASS", "ONE TWENTY  THREE", numberWords.toWords( 123 )  ) ;
+	}
+
+	@Test
+	public void numberFiveSixEight() {
+		Assert.assertEquals( "PASS", "FIVE SIXTY  EIGHT", numberWords.toWords( 568 )  ) ;
+	}
+
+	@Test
+	public void numberOutOfRange() {
+		Assert.assertEquals( "PASS", "NUMBER OUT OF RANGE", numberWords.toWords( 1002 )  ) ;
+	}
+
 
 }
