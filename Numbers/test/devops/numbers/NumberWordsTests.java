@@ -32,5 +32,4 @@ public class NumberWordsTests {
 		Assert.assertEquals( "PASS", "NUMBER OUT OF RANGE", numberWords.toWords( 1002 )  ) ;
 	}
 
-
 }
